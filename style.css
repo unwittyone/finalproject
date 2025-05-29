@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   font-family: "Roboto", sans-serif;
@@ -12,13 +12,8 @@ a {
     text-decoration: none;
 }
 
-
-a:hover {
-    text-decoration: underline;
-}
-
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .row {
@@ -27,7 +22,6 @@ html {
   margin: 0 auto;
   margin: 24px 24px;
   padding: 40px;
- 
 }
 
 .nav {
@@ -36,18 +30,17 @@ html {
   align-items: center;
 }
 
-
 .nav__links {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-    padding-bottom: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 2px;
 }
 
 .nav__logo--img {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .nav__row {
@@ -55,12 +48,11 @@ html {
   justify-content: space-between;
 }
 
-
 .nav__logo {
-    display: flex;
-    align-items: center;
-    margin: 8px 0;
-    padding-bottom: 4px;
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  padding-bottom: 4px;
 }
 
 .nav__logo--title {
@@ -81,40 +73,41 @@ html {
     letter-spacing: 0.35px;
     border-bottom: 2px solid transparent;
     position: relative;
-    transition: all 300ms;
-    color: #000;
-  }
+    transition: color 300ms; /* Focus on specific properties */
+    color: #243e63; 
+}
 
+/* Primary link */
 .nav__link--primary {
-  margin: 0;
-  padding: 10px 32px;
-  margin-top: 2px;
-  border-radius: 9999px;
-  background: #6415ff;
-  color: #fff;
-  line-height: 1.5;
-  border: none;
-  width: auto;
-  transition: all 300ms;
+    padding: 10px 32px;
+    border-radius: 9999px;
+    background: #6415ff;
+    color: #fff;
+    transition: background 300ms; /* Adjust specific properties */
 }
 
-.nav__link--primary:after {
-    content: "";
-    width: 0;
-    height: 0;
+/* Hover effects for both */
+.nav__link:hover {
+    color: #6415ff; 
 }
 
+.nav__link--primary:hover {
+    background: #6415ff; 
+}
+
+/* After pseudo-element effects */
 .nav__link:after {
     content: "";
     position: absolute;
-    left: 0px;
+    left: 0;
     bottom: -6px;
     height: 2px;
     width: 100%;
-    background: #6415ff;
-    transition: all 300ms;
+    background: #6415ff; 
+    transition: opacity 300ms; 
     opacity: 0;
 }
 
-
-
+.nav__link:hover:after {
+    opacity: 1; 
+}
