@@ -92,7 +92,9 @@ html {
 }
 
 .nav__link--primary:hover {
-    background: #6415ff; 
+    background: rgba(100, 21, 255, 0.8);
+
+    
 }
 
 /* After pseudo-element effects */
