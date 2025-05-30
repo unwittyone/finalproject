@@ -217,6 +217,7 @@ header .row {
   text-align: center;
   padding-block: 1px;
   padding-inline: 6px;
+  cursor: pointer;
 }
 
 .header__customers--title {
@@ -277,7 +278,7 @@ header .row {
     border: 1px solid rgb(229, 321, 235);
     border-radius: 8px;
     z-index: 4;
-    visibility: hidden;
+    display: none;
     opacity: 0;
     transform: translateX(300%);
     transition: all 300ms ease;
@@ -301,7 +302,7 @@ header .row {
     border: none;
 }
 
-.menu__open .modal {
+.modal.menu__open {
     visibility: visible;
     opacity: 1;
     transform: translateX(0);
@@ -330,64 +331,51 @@ header .row {
 /* MEDIA QUERIES */
 
 @media (max-width: 600px) {
-  .header__customers {
-    padding-right: 64px;
-  }
+    .header__customers {
+        padding-right: 64px;
+    }
+    .header__img--wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .header__description--para {
+        font-size: 16px;
+    }
+    .header__img {
+        max-width: 512px;
+    }
+    header .row {
+        align-items: flex-end;
+    }
+    .header__email {
+        display: block;
+    }
+    .header__email--input {
+        display: block;
+        position: relative;
+    }
+    
 }
-
-@media (max-width: 600px) {
-  .header__img--wrapper {
-    display: flex;
-    justify-content: flex-end;
-  }
-}
-
-@media (max-width: 600px) {
-  .header__description--para {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 600px) {
-  .header__img {
-    max-width: 512px;
-  }
-}
-
-@media (max-width: 600px) {
-  header .row {
-    align-items: flex-end;
-  }
-}
-
-@media (max-width: 640px) {
-  .container {
-    padding: 80px 0;
-  }
-}
-
-@media (max-width: 600px) {
-  .header__email {
-    display: block;
-  }
-}
-
-@media (max-width: 600px) {
-  .header__email--input {
-    display: block;
-    position: relative;
-  }
-}
-
-@media (max-width: 1024px) {
+    
+    @media (max-width: 1024px) {
+    
+    .nav {
+        display: none;
+    }
+    
+    .nav__links {
+        display: none;
+        background-color: red;
+    }
+    
     .btn__menu {
         display: block;
-        
     }
 }
 
-@media (max-width: 600px) {
-    .nav {
-        display: none;
+
+@media (max-width: 640px) {
+    .container {
+        padding: 80px 0;
     }
 }
