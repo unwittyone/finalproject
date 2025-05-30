@@ -29,8 +29,30 @@
                 <a href="#" class="nav__link nav__link--primary">Sign Up
                 </a>
             </div>
-            </div>
+            <button class="btn__menu" onclick="openMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn__menu--svg">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
         </nav>
+        <div class="modal">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="light___StyledCloseIcon-lj69nl-14 fASujC">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>   
+            </button>
+            <div class="modal__links">
+                <a class="modal__link">About</a>
+                <a class="modal__link">Blog</a>
+                <a class="modal__link">Pricing</a>
+                <a class="modal__link">Contact Us</a>
+                <a class="modal__link">Login</a>
+                <a class="modal__link modal__link--primary">Sign Up</a>
+            </div>
+        </div>
         <header>
             <div class="container">
                 <div class="row">
@@ -47,12 +69,12 @@
                     <img src="./assets 2.3/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt class="header__customers">
                     </div>
                     <figure class="header__img--wrapper">
-                        <img src="./assets 2.3/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt class="header_img">">
+                        <img src="./assets 2.3/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt class="header_img">
                     </figure>
                 </div>
             </div>
             <svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" class="header__blob">
-                <g transform=""translate(300,300)">
+                <g transform="translate(300,300)">
                     <g transform="translate(300,300)">
                         <path d="M176.2,-106.9C208.7,-45.5,201.8,33.5,165.8,99.4C129.9,165.3,65,218.2,-9.2,223.5C-83.4,228.8,-166.9,186.7,-201.6,121.4C-236.4,56.2,-222.6,-32.2,-180.9,-98.9C-139.1,-165.7,-69.6,-210.8,1.2,-211.5C71.9,-212.2,143.8,-168.3,176.2,-106.9Z" fill="#6415ff"></path>
                     </g>
