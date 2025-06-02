@@ -155,6 +155,16 @@ header .row {
   text-align: center;
 }
 
+.header__blob {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0.05;
+    width: 256px;
+    height: 256px;
+    transform: matrix(1, 0, 0, 1, -163, 0);
+}
+
 .header__description {
   width: 40%;
   display: block;
@@ -302,7 +312,8 @@ header .row {
     border: none;
 }
 
-.modal.menu__open {
+.menu--open .modal {
+    display: block;
     visibility: visible;
     opacity: 1;
     transform: translateX(0);
